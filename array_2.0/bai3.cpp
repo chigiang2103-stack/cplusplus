@@ -16,24 +16,32 @@ int main () {
     // 7 6 5 
     int top=0 , bottom = n-1, letf=0 , right=m-1;
     while (top <= bottom && letf <= right) {
-        for (int i =0; i<m;i++) {
+        // print hàng tren cùng 
+        for (int i =letf; i<= right ;i++) {
             cout << ptr[top][i];
         }
         top++;
-        for (int j=1;j<n;j++) {
-            cout << ptr[right][j]; 
+        // print hàng ngoài cùng bên phải 
+        for (int j=top;j<=bottom;j++) {
+            cout << ptr[j][right]; 
         }
         right--;
-        for (int i = m-1;i>0;i++) {
-            cout << ptr[bottom][m];
-        }
+          // print hàng dứoi cùng 
+          if (top <= bottom ) {
+            for (int i = right;i>=letf;i--) {
+                cout << ptr[bottom][i];
+            }
         bottom--;
-        for (int i = 1 ; i<m-1;i++) {
-            cout << ptr[letf][i];
+          }
+          //print hàng ngoài cùng bên trái 
+          if (letf <= right) {
+        for (int i = bottom ; i>=top;i--) {
+            cout << ptr[i][letf];
         }
         letf++;
-        return 0;
+          }
     }
+    cout <<endl;
     return 0;
     
     
