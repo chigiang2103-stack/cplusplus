@@ -34,4 +34,3 @@ int find(int n ) {
     return res;
 }
 
-//test
