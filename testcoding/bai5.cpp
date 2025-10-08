@@ -2,23 +2,24 @@
 using namespace std;
 #define ll long long 
 int main () {
-    ll n ;
-    cout <<""; cin >>n;
-    ll find(ll n );
-    ll res;
-    for (int i = n - 100 ; i < n ; i++) {
-        if (find(i)==n) {
-            res = i;
-            break;
-        }
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n ; 
+    cin >> n;
+    ll arr[n];
+    ll fibonaci(ll n);
+    for (int i = 0;i<n;i++) {
+        cin >> arr[i];
     }
-    cout << res <<endl;
-}
-ll find(ll n ) {
-    ll temp = n , res =temp;
-    while (temp > 0) {
-        res +=temp%10;
-        temp = temp/10;
+    for (int i = 0 ; i<n;i++) {
+        cout << fibonaci(arr[i])%10 << endl;
     }
-    return res;
+    return 0;
+
 }
+ll fibonaci(ll n ){
+    if (n==1 || n ==2 ) return n;
+    return fibonaci(n-1) + fibonaci(n-2);
+}
+
+
