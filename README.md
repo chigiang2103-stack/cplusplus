@@ -1,3 +1,4 @@
-# Day 1
-## Day2
-in future
+#Repo Ghi lại hành trình học c++ 
+
+#hcmus 25ctt1 
+
