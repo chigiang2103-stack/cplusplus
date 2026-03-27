@@ -1,0 +1,1 @@
+{"name":"Local: catch","url":"/Users/buichihau/Documents/cplusplus/25dsa/stack_queue/catch.cpp","tests":[{"id":1773921762202,"input":"9\nadd\nfor 43\nend\nfor 10\nfor 15\nadd\nend\nadd\nend\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/buichihau/Documents/cplusplus/25dsa/stack_queue/catch.cpp","group":"local","local":true}
